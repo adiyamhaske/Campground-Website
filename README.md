@@ -34,3 +34,9 @@ Run ```mongod``` in another terminal and ```node app.js``` in the terminal with 
 Then go to [localhost:3000](http://localhost:3000/).
 
 To get google maps working check [this](https://github.com/nax3t/google-maps-api) out.
+
+## Google Maps Tutorial
+
+See video tutorial [here](https://www.youtube.com/watch?v=B4OuCjQLJ9k)
+
+See slides [here](http://slides.com/nax3t/yelpcamp-refactor-google-maps)
