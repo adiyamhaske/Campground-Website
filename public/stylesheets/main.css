@@ -1,0 +1,47 @@
+.thumbnail img {
+    width: 100%;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+}
+
+#delete-form {
+    display: inline;
+}
+
+/* Google Maps */
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+.jumbotron h1 {
+	color: 	#FFFFFF;
+}
+
+.jumbotron p {
+	color: 	#FFFFFF;
+}
+
+.navbar{
+	color:#FFFFFF;
+	background-color:#337ab7;
+}
+/* #111{
+	background-image:url(https://images.unsplash.com/photo-1537565266759-34bbc16be345?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9);
+	background-size: 100%;
+} */
+
+.navbar {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+.nav > li > a:hover{
+    background-color:#337ab7;
+}

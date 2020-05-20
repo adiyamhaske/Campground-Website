@@ -1,0 +1,30 @@
+<% include ../partials/header %> 
+
+ 
+     <header class="jumbotron" style="background-image: url(https://images.unsplash.com/photo-1586783965334-e29d38a767b6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9); background-size: 100%;">
+         <div class="container">
+			 <p style="text-align: center">.</p>
+             <h1 style="text-align: center">TrouVaille for Camping!</h1>
+             <p style="text-align: center" >View our hand-picked campgrounds from all over the world</p>
+			 <p style="text-align: center">.</p>
+         </div>
+     </header>
+     <div class="container">
+     <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+        <% campgrounds.forEach(function(campground){ %>
+            <div class="col-md-3 col-sm-6">
+                <div class="thumbnail">
+                   <img src="<%= campground.image %>">
+                   <div class="caption">
+                      <a href="/campgrounds/<%= campground._id %>" class="button"><h4><%= campground.name %></h4></a>
+                   </div>
+                   <p>
+                       
+                   </p>
+                </div>
+            </div>
+        <% }); %>
+    </div>
+</div>
+
+<% include ../partials/footer %>

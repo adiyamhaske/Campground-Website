@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TrouVaille</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/stylesheets/main.css">
+    </head>
+    <body>
+    <nav id=111 class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header"><ul>
+				<ls><a class="navbar-brand" href="/" style="color:#FFFFFF">TrouVaille</a></ls>
+				<ls><a class="navbar-brand" href="/campgrounds"style="color:#FFFFFF">Home</a></ls>
+				</ul>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+						<li><a class="nav-item nav-link" href="/campgrounds/new" style="color:#FFFFFF">Add Campground</a></li>
+                    <% if(!currentUser){ %>
+                        <li><a class="nav-item nav-link" href="/login" style="color:#FFFFFF">Login</a></li>
+                        <li><a class="nav-item nav-link" href="/register" style="color:#FFFFFF">Sign Up</a></li>
+                    <% } else { %>
+                        <li><a href="#" style="color:#FFFFFF">Signed In As <%= currentUser.username %></a></li>
+                        <li><a href="/logout" style="color:#FFFFFF">Logout</a></li>
+                    <% } %>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div  class="container">
+        
+        <% if(error && error.length > 0){ %>
+            <div class="alert alert-danger" role="alert">
+                <%= error %>
+            </div>
+        <% } %>
+        <% if(success && success.length > 0){ %>
+            <div class="alert alert-success" role="alert">
+                <%= success %>
+            </div>
+        <% } %>
+    </div>
+    
