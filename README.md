@@ -34,6 +34,18 @@ Then go to [localhost:3000](http://localhost:3000/).
 
 To get google maps working check [this](https://github.com/nax3t/google-maps-api) out.
 
+## Upload Site to Heroku
+```
+git config --global user.email "abc@email.com"
+git init
+git add.
+git commit -m "Add_your_Comment"
+
+heroku login  -i {add your mail and password}
+heroku create
+git push heroku master
+```
+
 ## Google Maps Tutorial
 
 See video tutorial [here](https://www.youtube.com/watch?v=B4OuCjQLJ9k)
